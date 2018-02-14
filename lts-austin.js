@@ -8,7 +8,7 @@ console.log(removeChar('Edward'));
 console.log(removeChar('Vidaurri'));
 
 function weatherInfo (temp) {
-  var c = convertToCelsius(temp);
+  var c = (convertToCelsius(temp).toFixed(2));
   if (c <= 0) {
     return (c + " is freezing temperature");
   }else{
