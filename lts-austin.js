@@ -9,15 +9,17 @@ console.log(removeChar('Vidaurri'));
 
 function weatherInfo (temp) {
   var c = convertToCelsius(temp);
-  if (c < 0) {
+  if (c <= 0) {
     return (c + " is freezing temperature");
   }else{
     return c + " is above freezing temperature";
   }
 }
-console.log(weatherInfo(100));
+
+
 function convertToCelsius (temperature) {
-  var celsius = (temperature) - 32 + (5/9);
-  return temperature;
+  var celsius = (temperature - 32) * (5/9);
+  return celsius;
 }
-console.log(weatherInfo(-10));
+console.log(weatherInfo(212));
+console.log(weatherInfo(32));
