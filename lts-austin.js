@@ -64,3 +64,14 @@ function upperCaseFirst(str) {
   return newArray.join(' ');
 }
 console.log(upperCaseFirst('edward o. vidaurri'));
+
+function upperCase(str) {
+  let array2 = str.split(' ');
+  let newArray2 = [];
+  for(let x = 0; x < array2.length; x++) {
+    newArray2.push(array2[x].charAt(0).toUpperCase());
+
+  }
+  return newArray2.join(' ');
+}
+console.log(upperCase('edward o. vidaurri'));
